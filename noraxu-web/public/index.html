@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+    <a href="#artwork" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ARTWORK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="#artwork" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ARTWORK</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Page content -->
+  <div class="w3-black" id="home">
+    <div class="w3-container w3-content w3-padding-64 w3-center" style="max-width:1000px">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Nora Xu.</h1>
+      <p>Hardware Engineer and Artist.</p>
+      <div class="mySlides fade">
+        <img src="./images/home_img1.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="./images/home_img2.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- The project Section -->
+  <div class="" id="projects">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+      <a href="https://github.com/xutianyish/"><h2 class="w3-wide w3-center">PROJECTS</h2></a>
+      
+       
+      <div class="w3-row-padding w3-padding-32"> 
+      <div class="w3-half">
+        <a href="https://github.com/xutianyish/ECE241-project-game-of-squares"><img src="./images/project1.png" style="width:100%"></a>
+        </div>
+      <div class="w3-half">
+        <h3 class="w3-wide w3-center">Game of Squares</h3>
+        <p class="w3-opacity">This game is implemented in System Verilog. It is played on a 3x3 rectangular grid consisting of black cells. 
+          When a cell is selected, its adjacent cells and itself will be flipped to their opposite colours. The objective is to make all the cells white.</p> 
+      </div>
+      </div>
+
+      <div class="w3-row-padding w3-padding-32"> 
+      <div class="w3-half">
+        <a href="https://github.com/xutianyish/APS360-Face_generator"><img src="./images/project2.png" style="width:100%"></a>
+      </div>
+      <div class="w3-half">
+        <h3 class="w3-wide w3-center">Face Generator</h3>
+        <p class="w3-opacity">The purpose of the project is to generate human faces that do not exist in the training set. 
+          Four models are compared: An autoencoder, a variational autoencoder, a Deep Convolutional Generative Adversarial Network, and a Variational Autoencoder Generative Adversarial Network. 
+          All models are trained on a processed version of the publicly available LFW face dataset. </p>
+      </div>
+      </div>
+
+      <div class="w3-row-padding w3-padding-32"> 
+      <div class="w3-half">
+        <a href="https://github.com/xutianyish/ECE243-project-music-simulator"><img src="./images/project3.jpeg" style="width:100%"></a>
+      </div>
+      <div class="w3-half">
+        <h3 class="w3-wide w3-center">Music Simulator</h3>
+        <p class="w3-opacity">This project is implemented in assembly. It has four modes of operation: musical instrument, player, recorder, and modifier mode.</p>
+      </div>
+      </div>
+
+      <div class="w3-row-padding w3-padding-32"> 
+      <div class="w3-half">
+        <a href="https://github.com/xutianyish/piplined-processor"><img src="./images/project4.png" style="width:100%"></a>
+      </div>
+      <div class="w3-half">
+        <h3 class="w3-wide w3-center">Pipelined Processor</h3>
+        <p class="w3-opacity">This is a high performance pipelined processor consisting of four stages: fetch, decode, execute and write back.</p> 
+      </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- The Artwork Section -->
+  <div class="w3-black" id="artwork">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+      <a href="https://www.pixiv.net/en/users/19053825"><h2 class="w3-wide w3-center">MY ARTWORK</h2></a>
+      
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="./images/artwork1.jpeg" style="width:100%">
+          <img src="./images/artwork8.jpg" style="width:100%">
+          <img src="./images/artwork2.jpg" style="width:100%">
+          <img src="./images/artwork3.jpg" style="width:100%">
+          <img src="./images/artwork4.jpg" style="width:100%">
+        </div>
+  
+        <div class="w3-half">
+          <img src="./images/artwork6.jpeg" style="width:100%">
+          <img src="./images/artwork5.jpg" style="width:100%">
+          <img src="./images/artwork7.jpeg" style="width:100%">
+          <img src="./images/artwork9.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  </div>
+
+ <!-- The Contact Section -->
+ <div class="" id="contact">
+ <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <a href="mailto:xutianyish@gmail.com"><h2 class="w3-wide w3-center">CONTACT ME</h2></a>
+    <div class="m6 w3-large w3-margin-bottom w3-center">
+      <i class="fa fa-map-marker" style="width:20px"></i> Toronto, ON<br>
+      <i class="fa fa-phone" style="width:20px"></i> Phone: +1 4167324856<br>
+      <i class="fa fa-envelope" style="width:20px"> </i> Email: xutianyish@gmail.com<br>
+      <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge" id="contact">
+        <a href="https://github.com/xutianyish/" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/tianyi-xu-03b924139/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <a href="mailto:xutianyish@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+        <a href="tel:416-732-4856"><i class="fa fa-phone w3-hover-opacity"></i></a>
+        <a href="https://www.youtube.com/channel/UCLDbb4lC-ei1rRqen2wFfTA?view_as=subscriber"><i class="fa fa-youtube-play w3-hover-opacity"></i></a>
+        <a href="https://www.pixiv.net/en/users/19053825"><img src="./images/pixiv_icon.png" width=16 height=16 style="margin-Top:-5px"></a>
+      </footer>
+    </div>
+</div>
+</div>
+
+<script src="index.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.20.0/firebase-app.js"></script>
+<script src="/__/firebase/7.20.0/firebase-analytics.js"></script>
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
